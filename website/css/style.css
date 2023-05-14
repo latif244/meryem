@@ -1,7 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #6244C5;
-    --secondary: #FFC448;
+    /* --primary: #6244C5; */
+    --primary: #04fcfc;
+    /* --secondary: #FFC448; */
+    --secondary: #f9cb9c;
     --light: #FAFAFB;
     --dark: #12141D;
 }
@@ -106,7 +108,7 @@
 /*** Header ***/
 #home {
     margin-bottom: 6rem;
-    background: url(../img/meryemlogo.png) left top no-repeat;
+    /* background: url(../img/meryemlogo.png) left top no-repeat; */
 }
 
 .typed-cursor {
