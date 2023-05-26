@@ -358,3 +358,7 @@
 2023/05/14 22:16:18 [error] 7#7: *113 open() "/www/404.html" failed (2: No such file or directory), client: 172.17.0.1, server: _, request: "GET /lib/typed/typed.min.js.map HTTP/1.1", host: "meryem.sawadogo.xyz"
 2023/05/14 22:16:18 [error] 7#7: *114 open() "/www/lib/lightbox/js/lightbox.min.map" failed (2: No such file or directory), client: 172.17.0.1, server: _, request: "GET /lib/lightbox/js/lightbox.min.map HTTP/1.1", host: "meryem.sawadogo.xyz"
 2023/05/14 22:16:18 [error] 7#7: *114 open() "/www/404.html" failed (2: No such file or directory), client: 172.17.0.1, server: _, request: "GET /lib/lightbox/js/lightbox.min.map HTTP/1.1", host: "meryem.sawadogo.xyz"
+2023/05/26 21:38:13 [error] 7#7: *2 open() "/www/img/logo.png" failed (2: No such file or directory), client: 172.17.0.1, server: _, request: "GET /img/logo.png HTTP/1.1", host: "meryem.sawadogo.xyz"
+2023/05/26 21:38:13 [error] 7#7: *2 open() "/www/404.html" failed (2: No such file or directory), client: 172.17.0.1, server: _, request: "GET /img/logo.png HTTP/1.1", host: "meryem.sawadogo.xyz"
+2023/05/26 21:38:17 [error] 7#7: *3 open() "/www/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "meryem.sawadogo.xyz", referrer: "https://meryem.sawadogo.xyz/img/logo.png"
+2023/05/26 21:38:17 [error] 7#7: *3 open() "/www/404.html" failed (2: No such file or directory), client: 172.17.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "meryem.sawadogo.xyz", referrer: "https://meryem.sawadogo.xyz/img/logo.png"
