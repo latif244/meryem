@@ -19,7 +19,7 @@ class FormMixin:
             result = "Something went wrong. Please try again."
             return HttpResponse(result, status=400)
 
-@csrf_protect
+# @csrf_protect
 class HomeView(FormMixin, TemplateView):
     template_name = "index.html"
 
