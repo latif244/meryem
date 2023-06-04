@@ -27,9 +27,6 @@ python3 manage.py createsuperuser
 pip freeze > requirements.txt 
 python3 manage.py runserver 0.0.0.0:8000
 
-python manage.py makemigrations my_app --empty
-python manage.py migrate my_app --fake
-
 
 ## troubleshooting
 python manage.py makemigrations website --empty
