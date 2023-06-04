@@ -10,7 +10,7 @@ WORKDIR /code
 EXPOSE 8000
 
 # Expose volumes
-VOLUME ["/code"]
+VOLUME ["/"]
 
 # runs the production server
 ENTRYPOINT ["python", "manage.py"]
