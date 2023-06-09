@@ -34,13 +34,13 @@ CSRF_TRUSTED_ORIGINS = [
     #"*"
  ]
 
-CORS_ORIGIN_WHITELIST = [
-   #"http://localhost:8000",
-   #"https://django.sawadogo.xyz",
-   "https://meryerm.sawadogo.xyz",
-   #"https://katja-meryem-bruegel.de",    
+# CORS_ORIGIN_WHITELIST = [
+#    #"http://localhost:8000",
+#    #"https://django.sawadogo.xyz",
+#    "https://meryerm.sawadogo.xyz",
+#    #"https://katja-meryem-bruegel.de",    
 
-]
+# ]
 
 # Application definition
 
