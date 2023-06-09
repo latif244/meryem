@@ -28,11 +28,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = [
+#    "https://meryerm.sawadogo.xyz",
+#    "https://django.sawadogo.xyz",
     "https://meryerm.sawadogo.xyz",
-    "https://django.sawadogo.xyz",
-    "https://meryerm.sawadogo.xyz",
-    "https://katja-meryem-bruegel.de",
-    "*"
+#    "https://katja-meryem-bruegel.de",
+    #"*"
  ]
 
 CORS_ORIGIN_WHITELIST = [
