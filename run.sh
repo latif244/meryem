@@ -1,5 +1,9 @@
+#
 docker rm -f meryem
-
+#
+sudo chmod 777 ./docker/* -R
+sudo chown ibrahim:ibrahim ./* -R
+#
 git add .
 git commit -am "$(date)"
 git push
