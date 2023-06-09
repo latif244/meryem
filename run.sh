@@ -19,7 +19,7 @@ docker run -it -d \
     -p 8090:8000 \
     --name meryem \
     --restart always \
-    -v ./docker/code:/code/db \
+    -v ./docker/code/db.sqlite3:/code/db.sqlite3 \
     meryem:latest
 
 #     -v ./docker/code:/code/db \
