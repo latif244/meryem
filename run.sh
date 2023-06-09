@@ -19,6 +19,7 @@ docker run -it -d \
     -p 8090:8000 \
     --name meryem \
     --restart always \
+    -v ./docker/code:/code/db \
     meryem:latest
 
-#     -v ./docker/code:/code \
+#     -v ./docker/code:/code/db \
