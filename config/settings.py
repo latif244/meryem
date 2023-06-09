@@ -27,16 +27,20 @@ SECRET_KEY = "django-insecure-#q3swu!d-e4u@dh8-xtx)y&27^ewi(98p8rv6eh*+%h!4&61r4
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = "https://meryerm.sawadogo.xyz",
-# [
-#     "https://django.sawadogo.xyz",
-#     "https://meryerm.sawadogo.xyz",
-#     "https://katja-meryem-bruegel.de",
-# ]
+CSRF_TRUSTED_ORIGINS = [
+    "https://meryerm.sawadogo.xyz",
+    "https://django.sawadogo.xyz",
+    "https://meryerm.sawadogo.xyz",
+    "https://katja-meryem-bruegel.de",
+    "*"
+ ]
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:8000',
-    "*"
+     "https://django.sawadogo.xyz",
+     "https://meryerm.sawadogo.xyz",
+     "https://katja-meryem-bruegel.de",    
+
 ]
 
 # Application definition
