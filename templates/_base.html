@@ -10,9 +10,9 @@
     <meta content="Sprachförderung Sprachunterricht Nachhilfeunterricht" name="description">
     <meta property="og:title" content="Sprachförderung Sprachunterricht Nachhilfeunterricht" />
     <meta property="og:description" content="Sprachförderung Sprachunterricht Nachhilfeunterricht" />
-    <meta property="og:url" content="https://www.katja-meryem-bruegel.de/" />
+    <meta property="og:url" content="https://katja-meryem-bruegel.de/" />
     <meta property="og:locale" content="de_DE" />
-    <meta property="og:image" content="https://www.katja-meryem-bruegel.de{% static 'website/img/logo.png' %}" />
+    <meta property="og:image" content="https://katja-meryem-bruegel.de{% static 'website/img/logo.png' %}" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Katja Meryem" />
 
@@ -40,14 +40,14 @@
     <link href="{% static 'website/css/style.css' %}" rel="stylesheet">
     <!-- Matomo -->
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEL9677HVT"></script>
-    <script>
+    {% comment %} <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEL9677HVT"></script> {% endcomment %}
+    {% comment %} <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-KEL9677HVT');
-    </script>
+    </script> {% endcomment %}
     <script>
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
