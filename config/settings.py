@@ -29,6 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = [
     'https://meryerm.sawadogo.xyz',
+    'https://*.sawadogo.xyz',
 #    "https://django.sawadogo.xyz",
     'https://katja-meryem-bruegel.de',
     #"*"
