@@ -21,7 +21,7 @@ class FormMixin:
                 [subject],
                 [message],
                 [email],
-                'info@skylinewebservice.de', # Replace with your email address
+                ['info@skylinewebservice.de'], # Replace with your email address
                 fail_silently=False,
             )
             result = "Thank you"
