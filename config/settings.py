@@ -141,7 +141,7 @@ EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # Choose an email backend
 EMAIL_HOST = 'localhost' # Replace with your SMTP server hostname
-EMAIL_PORT = 587 # Replace with your SMTP server port
+EMAIL_PORT = 1025 # Replace with your SMTP server port 587
 EMAIL_USE_TLS = True # Replace with True if using TLS
 EMAIL_HOST_USER = 'info@localhost' # Replace with your SMTP username
 EMAIL_HOST_PASSWORD = 'your_password' # Replace with your SMTP password

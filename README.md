@@ -5,7 +5,7 @@ used (https://www.logoai.com/) to create logo
 https://www.logoai.com/download?logo=748114
 
 
-Python and Django
+## Python and Django
 
 apt-get install python3-venv
 virtualenv -p python3 .venv
@@ -37,7 +37,7 @@ python3 manage.py migrate
 
 
 
-# Other tutorials
+## Other tutorials
 admin: 
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Admin_site
 
@@ -48,14 +48,14 @@ Python Django Dentist Website #4
 
 (https://www.youtube.com/watch?v=nWBgg2QXtSA)
 
-# start local smtp server - atviavate virtual env first
+## start local smtp server - atviavate virtual env first
 python -m smtpd -n -c DebuggingServer localhost:1025
 
-Read other Stuffs:
+## Read other Stuffs:
 django enviromental passsword
 python dictionaries
 
-# Production hosting online
+## Production hosting online
 
 pip install gunicorn
 pip install django-heroku
