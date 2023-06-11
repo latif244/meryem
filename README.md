@@ -49,11 +49,28 @@ Python Django Dentist Website #4
 (https://www.youtube.com/watch?v=nWBgg2QXtSA)
 
 ## start local smtp server - atviavate virtual env first
+(https://docs.djangoproject.com/en/4.2/topics/email/)
+
+use a “dumb” SMTP server that receives the emails locally and displays them to the terminal, but does not actually send anything
+python -m pip install aiosmtpd
+python -m aiosmtpd -n -l localhost:8025
+
 python -m smtpd -n -c DebuggingServer localhost:1025
 
 ## Read other Stuffs:
-django enviromental passsword
-python dictionaries
+### django enviromental passsword
+
+python -m pip install argon2-cffi
+
+### Creating Environment Variables
+(https://djangocentral.com/environment-variables-in-django/)
+
+pip install django-environ
+
+
+### python dictionaries
+
+
 
 ## Production hosting online
 
