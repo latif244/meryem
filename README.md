@@ -5,7 +5,7 @@ used (https://www.logoai.com/) to create logo
 https://www.logoai.com/download?logo=748114
 
 
-Python and Django
+## Python and Django
 
 apt-get install python3-venv
 virtualenv -p python3 .venv
@@ -37,7 +37,7 @@ python3 manage.py migrate
 
 
 
-# Other tutorials
+## Other tutorials
 admin: 
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Admin_site
 
@@ -48,14 +48,31 @@ Python Django Dentist Website #4
 
 (https://www.youtube.com/watch?v=nWBgg2QXtSA)
 
-# start local smtp server - atviavate virtual env first
+## start local smtp server - atviavate virtual env first
+(https://docs.djangoproject.com/en/4.2/topics/email/)
+
+use a “dumb” SMTP server that receives the emails locally and displays them to the terminal, but does not actually send anything
+python -m pip install aiosmtpd
+python -m aiosmtpd -n -l localhost:8025
+
 python -m smtpd -n -c DebuggingServer localhost:1025
 
-Read other Stuffs:
-django enviromental passsword
-python dictionaries
+## Read other Stuffs:
+### django enviromental passsword
 
-# Production hosting online
+python -m pip install argon2-cffi
+
+### Creating Environment Variables
+(https://djangocentral.com/environment-variables-in-django/)
+
+pip install django-environ
+
+
+### python dictionaries
+
+
+
+## Production hosting online
 
 pip install gunicorn
 pip install django-heroku
