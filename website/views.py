@@ -17,13 +17,13 @@ class FormMixin:
             email = details.cleaned_data.get('email')
             subject = details.cleaned_data.get('subject')
             message = details.cleaned_data.get('message')
-            send_mail(
-                [subject],
-                [message],
-                [email],
-                ['info@skylinewebservice.de'], # Replace with your email address
-                fail_silently=False,
-            )
+            # send_mail(
+            #     [subject],
+            #     [message],
+            #     [email],
+            #     ['info@skylinewebservice.de'], # Replace with your email address
+            #     fail_silently=False,
+            # )
             result = "Thank you"
             return HttpResponse(result, status=200)
         else:
