@@ -13,6 +13,12 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 
+import environ
+
+env = environ.Env()
+# reading .env file
+environ.Env.read_env()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -21,7 +27,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-#q3swu!d-e4u@dh8-xtx)y&27^ewi(98p8rv6eh*+%h!4&61r4"
+#SECRET_KEY = "django-insecure-#q3swu!d-e4u@dh8-xtx)y&27^ewi(98p8rv6eh*+%h!4&61r4"
+SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -140,11 +147,13 @@ LOGOUT_REDIRECT_URL = "website:home"  # new
 EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # Choose an email backend
-EMAIL_HOST = '212.227.191.142' # Replace with your SMTP server hostname
+EMAIL_HOST = env("EMAIL_HOST") # Replace with your SMTP server hostname
 EMAIL_PORT = 587 # Replace with your SMTP server port 587
 EMAIL_USE_TLS = True # Replace with True if using TLS
-EMAIL_HOST_USER = 'smtp@katja-meryem-bruegel.de' # Replace with your SMTP username
-EMAIL_HOST_PASSWORD = 'your_password' # Replace with your SMTP password
+EMAIL_HOST_USER = env("EMAIL_HOST_USER") # Replace with your SMTP username
+EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD") # Replace with your SMTP password
+
+
 
 PASSWORD_HASHERS = [
     "django.contrib.auth.hashers.Argon2PasswordHasher",
