@@ -67,6 +67,16 @@ python -m pip install argon2-cffi
 
 pip install django-environ
 
+### Django send email
+https://www.sitepoint.com/django-send-email/
+https://steelkiwi.com/blog/sending-emails-in-django-definitive-tutorial/
+https://www.abstractapi.com/guides/django-send-email
+
+### SSL ‘Certificate_Verify_Failed’ Error
+pip install --upgrade certifi
+
+### Create createsuperuser automation
+https://stackoverflow.com/questions/6244382/how-to-automate-createsuperuser-on-django#26091252
 
 ### python dictionaries
 

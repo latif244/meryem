@@ -39,6 +39,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://*.sawadogo.xyz',
 #    "https://django.sawadogo.xyz",
     'https://katja-meryem-bruegel.de',
+    'https://test.katja-meryem-bruegel.de',
     #"*"
  ]
 
@@ -148,11 +149,12 @@ EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # Choose an email backend
 EMAIL_HOST = env("EMAIL_HOST") # Replace with your SMTP server hostname
-EMAIL_PORT = 587 # Replace with your SMTP server port 587
+EMAIL_PORT = env("EMAIL_PORT") # Replace with your SMTP server port 587
 EMAIL_USE_TLS = env("EMAIL_USE_TLS") # Replace with True if using TLS
 EMAIL_HOST_USER = env("EMAIL_HOST_USER") # Replace with your SMTP username
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD") # Replace with your SMTP password
-
+RECIPIENT_ADDRESS = env('RECIPIENT_ADDRESS')
+EMAIL_USE_SSL = False
 
 
 # PASSWORD_HASHERS = [

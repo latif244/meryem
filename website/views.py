@@ -3,6 +3,7 @@ from django.views.decorators.csrf import csrf_protect
 from django.views.generic import TemplateView
 from django.shortcuts import render, HttpResponse
 from .models import PostForm
+from django.conf import settings
 
 
 class FormMixin:
@@ -24,6 +25,13 @@ class FormMixin:
             #     ['info@skylinewebservice.de'], # Replace with your email address
             #     fail_silently=False,
             # )
+            send_mail(
+                subject=[subject],
+                message=[message] + [email],
+                from_email=settings.EMAIL_HOST_USER,
+                recipient_list=[settings.RECIPIENT_ADDRESS],
+                fail_silently=False,
+            )
             result = "Thank you"
             return HttpResponse(result, status=200)
         else:
