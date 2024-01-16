@@ -22,7 +22,7 @@ class FormMixin:
             #     [subject],
             #     [message],
             #     [email],
-            #     ['iddrisu8a1@gmail.com'], # Replace with your email address
+            #     [''], # Replace with your email address
             #     fail_silently=False,
             # )
             send_mail(
